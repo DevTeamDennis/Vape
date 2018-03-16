@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		758CBC10205C2AB2007E4D08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758CBC0F205C2AB2007E4D08 /* AppDelegate.swift */; };
+		758CBC12205C2AB2007E4D08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758CBC11205C2AB2007E4D08 /* ViewController.swift */; };
+		758CBC15205C2AB2007E4D08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 758CBC13205C2AB2007E4D08 /* Main.storyboard */; };
+		758CBC17205C2AB2007E4D08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 758CBC16205C2AB2007E4D08 /* Assets.xcassets */; };
+		758CBC1A205C2AB2007E4D08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 758CBC18205C2AB2007E4D08 /* LaunchScreen.storyboard */; };
+		758CBC25205C2AB3007E4D08 /* VapeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758CBC24205C2AB3007E4D08 /* VapeTests.swift */; };
+		758CBC30205C2AB3007E4D08 /* VapeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758CBC2F205C2AB3007E4D08 /* VapeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		758CBC21205C2AB3007E4D08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 758CBC04205C2AB2007E4D08 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 758CBC0B205C2AB2007E4D08;
+			remoteInfo = Vape;
+		};
+		758CBC2C205C2AB3007E4D08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 758CBC04205C2AB2007E4D08 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 758CBC0B205C2AB2007E4D08;
+			remoteInfo = Vape;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		758CBC0C205C2AB2007E4D08 /* Vape.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vape.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		758CBC0F205C2AB2007E4D08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		758CBC11205C2AB2007E4D08 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		758CBC14205C2AB2007E4D08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		758CBC16205C2AB2007E4D08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		758CBC19205C2AB2007E4D08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		758CBC1B205C2AB2007E4D08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		758CBC20205C2AB3007E4D08 /* VapeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VapeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		758CBC24205C2AB3007E4D08 /* VapeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VapeTests.swift; sourceTree = "<group>"; };
+		758CBC26205C2AB3007E4D08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		758CBC2B205C2AB3007E4D08 /* VapeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VapeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		758CBC2F205C2AB3007E4D08 /* VapeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VapeUITests.swift; sourceTree = "<group>"; };
+		758CBC31205C2AB3007E4D08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		758CBC09205C2AB2007E4D08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		758CBC1D205C2AB3007E4D08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		758CBC28205C2AB3007E4D08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		758CBC03205C2AB2007E4D08 = {
+			isa = PBXGroup;
+			children = (
+				758CBC0E205C2AB2007E4D08 /* Vape */,
+				758CBC23205C2AB3007E4D08 /* VapeTests */,
+				758CBC2E205C2AB3007E4D08 /* VapeUITests */,
+				758CBC0D205C2AB2007E4D08 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		758CBC0D205C2AB2007E4D08 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				758CBC0C205C2AB2007E4D08 /* Vape.app */,
+				758CBC20205C2AB3007E4D08 /* VapeTests.xctest */,
+				758CBC2B205C2AB3007E4D08 /* VapeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		758CBC0E205C2AB2007E4D08 /* Vape */ = {
+			isa = PBXGroup;
+			children = (
+				758CBC0F205C2AB2007E4D08 /* AppDelegate.swift */,
+				758CBC11205C2AB2007E4D08 /* ViewController.swift */,
+				758CBC13205C2AB2007E4D08 /* Main.storyboard */,
+				758CBC16205C2AB2007E4D08 /* Assets.xcassets */,
+				758CBC18205C2AB2007E4D08 /* LaunchScreen.storyboard */,
+				758CBC1B205C2AB2007E4D08 /* Info.plist */,
+			);
+			path = Vape;
+			sourceTree = "<group>";
+		};
+		758CBC23205C2AB3007E4D08 /* VapeTests */ = {
+			isa = PBXGroup;
+			children = (
+				758CBC24205C2AB3007E4D08 /* VapeTests.swift */,
+				758CBC26205C2AB3007E4D08 /* Info.plist */,
+			);
+			path = VapeTests;
+			sourceTree = "<group>";
+		};
+		758CBC2E205C2AB3007E4D08 /* VapeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				758CBC2F205C2AB3007E4D08 /* VapeUITests.swift */,
+				758CBC31205C2AB3007E4D08 /* Info.plist */,
+			);
+			path = VapeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		758CBC0B205C2AB2007E4D08 /* Vape */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 758CBC34205C2AB3007E4D08 /* Build configuration list for PBXNativeTarget "Vape" */;
+			buildPhases = (
+				758CBC08205C2AB2007E4D08 /* Sources */,
+				758CBC09205C2AB2007E4D08 /* Frameworks */,
+				758CBC0A205C2AB2007E4D08 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Vape;
+			productName = Vape;
+			productReference = 758CBC0C205C2AB2007E4D08 /* Vape.app */;
+			productType = "com.apple.product-type.application";
+		};
+		758CBC1F205C2AB3007E4D08 /* VapeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 758CBC37205C2AB3007E4D08 /* Build configuration list for PBXNativeTarget "VapeTests" */;
+			buildPhases = (
+				758CBC1C205C2AB3007E4D08 /* Sources */,
+				758CBC1D205C2AB3007E4D08 /* Frameworks */,
+				758CBC1E205C2AB3007E4D08 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				758CBC22205C2AB3007E4D08 /* PBXTargetDependency */,
+			);
+			name = VapeTests;
+			productName = VapeTests;
+			productReference = 758CBC20205C2AB3007E4D08 /* VapeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		758CBC2A205C2AB3007E4D08 /* VapeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 758CBC3A205C2AB3007E4D08 /* Build configuration list for PBXNativeTarget "VapeUITests" */;
+			buildPhases = (
+				758CBC27205C2AB3007E4D08 /* Sources */,
+				758CBC28205C2AB3007E4D08 /* Frameworks */,
+				758CBC29205C2AB3007E4D08 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				758CBC2D205C2AB3007E4D08 /* PBXTargetDependency */,
+			);
+			name = VapeUITests;
+			productName = VapeUITests;
+			productReference = 758CBC2B205C2AB3007E4D08 /* VapeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		758CBC04205C2AB2007E4D08 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Dennis Feldbusch";
+				TargetAttributes = {
+					758CBC0B205C2AB2007E4D08 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					758CBC1F205C2AB3007E4D08 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 758CBC0B205C2AB2007E4D08;
+					};
+					758CBC2A205C2AB3007E4D08 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 758CBC0B205C2AB2007E4D08;
+					};
+				};
+			};
+			buildConfigurationList = 758CBC07205C2AB2007E4D08 /* Build configuration list for PBXProject "Vape" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 758CBC03205C2AB2007E4D08;
+			productRefGroup = 758CBC0D205C2AB2007E4D08 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				758CBC0B205C2AB2007E4D08 /* Vape */,
+				758CBC1F205C2AB3007E4D08 /* VapeTests */,
+				758CBC2A205C2AB3007E4D08 /* VapeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		758CBC0A205C2AB2007E4D08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				758CBC1A205C2AB2007E4D08 /* LaunchScreen.storyboard in Resources */,
+				758CBC17205C2AB2007E4D08 /* Assets.xcassets in Resources */,
+				758CBC15205C2AB2007E4D08 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		758CBC1E205C2AB3007E4D08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		758CBC29205C2AB3007E4D08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		758CBC08205C2AB2007E4D08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				758CBC12205C2AB2007E4D08 /* ViewController.swift in Sources */,
+				758CBC10205C2AB2007E4D08 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		758CBC1C205C2AB3007E4D08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				758CBC25205C2AB3007E4D08 /* VapeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		758CBC27205C2AB3007E4D08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				758CBC30205C2AB3007E4D08 /* VapeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		758CBC22205C2AB3007E4D08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 758CBC0B205C2AB2007E4D08 /* Vape */;
+			targetProxy = 758CBC21205C2AB3007E4D08 /* PBXContainerItemProxy */;
+		};
+		758CBC2D205C2AB3007E4D08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 758CBC0B205C2AB2007E4D08 /* Vape */;
+			targetProxy = 758CBC2C205C2AB3007E4D08 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		758CBC13205C2AB2007E4D08 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				758CBC14205C2AB2007E4D08 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		758CBC18205C2AB2007E4D08 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				758CBC19205C2AB2007E4D08 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		758CBC32205C2AB3007E4D08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		758CBC33205C2AB3007E4D08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		758CBC35205C2AB3007E4D08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5CQR9VGNDH;
+				INFOPLIST_FILE = Vape/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Dennis.Vape;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		758CBC36205C2AB3007E4D08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5CQR9VGNDH;
+				INFOPLIST_FILE = Vape/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Dennis.Vape;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		758CBC38205C2AB3007E4D08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5CQR9VGNDH;
+				INFOPLIST_FILE = VapeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Dennis.VapeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vape.app/Vape";
+			};
+			name = Debug;
+		};
+		758CBC39205C2AB3007E4D08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5CQR9VGNDH;
+				INFOPLIST_FILE = VapeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Dennis.VapeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vape.app/Vape";
+			};
+			name = Release;
+		};
+		758CBC3B205C2AB3007E4D08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5CQR9VGNDH;
+				INFOPLIST_FILE = VapeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Dennis.VapeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Vape;
+			};
+			name = Debug;
+		};
+		758CBC3C205C2AB3007E4D08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5CQR9VGNDH;
+				INFOPLIST_FILE = VapeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Dennis.VapeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Vape;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		758CBC07205C2AB2007E4D08 /* Build configuration list for PBXProject "Vape" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				758CBC32205C2AB3007E4D08 /* Debug */,
+				758CBC33205C2AB3007E4D08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		758CBC34205C2AB3007E4D08 /* Build configuration list for PBXNativeTarget "Vape" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				758CBC35205C2AB3007E4D08 /* Debug */,
+				758CBC36205C2AB3007E4D08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		758CBC37205C2AB3007E4D08 /* Build configuration list for PBXNativeTarget "VapeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				758CBC38205C2AB3007E4D08 /* Debug */,
+				758CBC39205C2AB3007E4D08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		758CBC3A205C2AB3007E4D08 /* Build configuration list for PBXNativeTarget "VapeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				758CBC3B205C2AB3007E4D08 /* Debug */,
+				758CBC3C205C2AB3007E4D08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 758CBC04205C2AB2007E4D08 /* Project object */;
+}

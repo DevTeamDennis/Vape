@@ -39,13 +39,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     override func viewDidAppear(_ animated: Bool) {
-//        if showNumber != nil {
-//            print("notnil")
-//            showNumber.text = number.array(forKey: "number")
-//        }
         super.viewDidAppear(animated)
     }
-    
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
@@ -89,17 +84,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         
         if nikShot1 == nikotin1{
-            
-        }else{if (menge1 == nil || nikotin1 == nil || nikShot1 == nil || aroma1 == nil) {
         }else{
-            self.aromaErg.text = "\(menge1! * aroma1! * 0.01)"
-            
-            self.nikotinErg.text = "\(menge1! / nikShot1! * nikotin1!)"
-            
-            self.base.text = "\(menge1!-menge1! * aroma1! * 0.01-menge1! / nikShot1! * nikotin1!)"
-            
-            }}
-        
+            if (menge1 == nil || nikotin1 == nil || nikShot1 == nil || aroma1 == nil) {
+            }else{
+                self.aromaErg.text = "\(menge1! * aroma1! * 0.01)"
+                self.nikotinErg.text = "\(menge1! / nikShot1! * nikotin1!)"
+                self.base.text = "\(menge1!-menge1! * aroma1! * 0.01-menge1! / nikShot1! * nikotin1!)"
+            }
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -142,17 +134,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         print(indexPath)
         print(number.mutableArrayValue(forKey: "number").object(at: indexPath.item))
         table.deselectRow(at: indexPath, animated: true)
-        //        performSegue(withIdentifier: "show", sender: self)
-        //POP UP!!!!
         let alert = UIAlertController(title: number.mutableArrayValue(forKey: "number").object(at: indexPath.item) as? String, message: "Test Msg", preferredStyle: .alert)
         alert.message = "\n"+"Geschmack = "+(geschmackA.mutableArrayValue(forKey: "geschmackA").object(at: indexPath.item) as! String)+"\n"+"\n"+"Nikotinstärke = "+(staerkeA.mutableArrayValue(forKey: "staerkeA").object(at: indexPath.item) as! String)
         
         alert.addAction(UIAlertAction(title: "Back", style: .default, handler: nil))
-        
         self.present(alert, animated: true)
-        
     }
-    
-    
-    
 }

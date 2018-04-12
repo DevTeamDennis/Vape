@@ -54,7 +54,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBAction func calculate(_ sender: Any) {
         
         //Berechnungen
-        
         var menge1 :Double? = nil
         if self.menge.text?.contains(",") == true{
             menge1 = Double(self.menge.text!.replacingOccurrences(of: ",", with: "."))
@@ -135,9 +134,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         print(number.mutableArrayValue(forKey: "number").object(at: indexPath.item))
         table.deselectRow(at: indexPath, animated: true)
         let alert = UIAlertController(title: number.mutableArrayValue(forKey: "number").object(at: indexPath.item) as? String, message: "Test Msg", preferredStyle: .alert)
-        alert.message = "\n"+"Geschmack = "+(geschmackA.mutableArrayValue(forKey: "geschmackA").object(at: indexPath.item) as! String)+"\n"+"\n"+"Nikotinstärke = "+(staerkeA.mutableArrayValue(forKey: "staerkeA").object(at: indexPath.item) as! String)
+        alert.message = "\n"+"Geschmack: "+(geschmackA.mutableArrayValue(forKey: "geschmackA").object(at: indexPath.item) as! String)+"\n"+"\n"+"Nikotinstärke: "+(staerkeA.mutableArrayValue(forKey: "staerkeA").object(at: indexPath.item) as! String)
         
-        alert.addAction(UIAlertAction(title: "Back", style: .default, handler: nil))
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         self.present(alert, animated: true)
     }
 }

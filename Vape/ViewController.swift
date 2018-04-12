@@ -119,7 +119,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             number.mutableArrayValue(forKey: "number").removeObject(at: indexPath.item)
             geschmackA.mutableArrayValue(forKey: "geschmackA").removeObject(at: indexPath.item)
             staerkeA.mutableArrayValue(forKey: "staerkeA").removeObject(at: indexPath.item)
-            table.deleteRows(at: [indexPath], with: .automatic)
+            let alert = UIAlertController(title: "Wirklich Löschen?", message: "Willst du wirklich den eintrag löschen?", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ja", style: .default, handler: {(alert: UIAlertAction!) in self.table.deleteRows(at: [indexPath], with: .automatic)}))
+            alert.addAction(UIAlertAction(title: "Nein", style: .cancel, handler: nil))
+            self.present(alert, animated: true)
+                   // table.deleteRows(at: [indexPath], with: .automatic)
+            
+            
         }
     }
     @IBAction func save(_ sender: Any) {

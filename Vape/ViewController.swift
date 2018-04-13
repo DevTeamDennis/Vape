@@ -14,7 +14,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var menge: UITextField!
     @IBOutlet weak var nikotin: UITextField!
     @IBOutlet weak var nikShot: UITextField!
-    @IBOutlet weak var aroma: UITextField!			
+    @IBOutlet weak var aroma: UITextField!
     @IBOutlet weak var base: UILabel!
     @IBOutlet weak var nikotinErg: UILabel!
     @IBOutlet weak var aromaErg: UILabel!
@@ -116,15 +116,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            number.mutableArrayValue(forKey: "number").removeObject(at: indexPath.item)
-            geschmackA.mutableArrayValue(forKey: "geschmackA").removeObject(at: indexPath.item)
-            staerkeA.mutableArrayValue(forKey: "staerkeA").removeObject(at: indexPath.item)
+            
             let alert = UIAlertController(title: "Wirklich Löschen?", message: "Willst du wirklich den eintrag löschen?", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "Ja", style: .default, handler: {(alert: UIAlertAction!) in self.table.deleteRows(at: [indexPath], with: .automatic)}))
+            alert.addAction(UIAlertAction(title: "Ja", style: .default, handler: {(alert: UIAlertAction!) in
+                self.number.mutableArrayValue(forKey: "number").removeObject(at: indexPath.item)
+                self.geschmackA.mutableArrayValue(forKey: "geschmackA").removeObject(at: indexPath.item)
+                self.staerkeA.mutableArrayValue(forKey: "staerkeA").removeObject(at: indexPath.item)
+                self.table.deleteRows(at: [indexPath], with: .automatic)
+            }))
             alert.addAction(UIAlertAction(title: "Nein", style: .cancel, handler: nil))
             self.present(alert, animated: true)
-                   // table.deleteRows(at: [indexPath], with: .automatic)
-            
             
         }
     }
@@ -136,8 +137,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath)
-        print(number.mutableArrayValue(forKey: "number").object(at: indexPath.item))
         table.deselectRow(at: indexPath, animated: true)
         let alert = UIAlertController(title: number.mutableArrayValue(forKey: "number").object(at: indexPath.item) as? String, message: "Test Msg", preferredStyle: .alert)
         alert.message = "\n"+"Geschmack: "+(geschmackA.mutableArrayValue(forKey: "geschmackA").object(at: indexPath.item) as! String)+"\n"+"\n"+"Nikotinstärke: "+(staerkeA.mutableArrayValue(forKey: "staerkeA").object(at: indexPath.item) as! String)

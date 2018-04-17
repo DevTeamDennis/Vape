@@ -130,7 +130,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     }
     @IBAction func save(_ sender: Any) {
-        test1Field.placeholder = "Type your Number"
         number.mutableArrayValue(forKey: "number").add(test1Field.text!)
         geschmackA.mutableArrayValue(forKey: "geschmackA").add(test2Field.text!)
         staerkeA.mutableArrayValue(forKey: "staerkeA").add(test3Field.text! + " mg")
@@ -138,10 +137,25 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         table.deselectRow(at: indexPath, animated: true)
+        
+        // mit alert Fenster
         let alert = UIAlertController(title: number.mutableArrayValue(forKey: "number").object(at: indexPath.item) as? String, message: "Test Msg", preferredStyle: .alert)
         alert.message = "\n"+"Geschmack: "+(geschmackA.mutableArrayValue(forKey: "geschmackA").object(at: indexPath.item) as! String)+"\n"+"\n"+"Nikotinstärke: "+(staerkeA.mutableArrayValue(forKey: "staerkeA").object(at: indexPath.item) as! String)
-        
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         self.present(alert, animated: true)
+        print(indexPath.item)
+        print(number.mutableArrayValue(forKey: "number").object(at: indexPath.item))
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let dest = segue.destination as? ShowViewController,
+            let cell = sender as? CustomTableViewCell,
+            let indexPath = table.indexPath(for: cell)
+        {
+            dest.showNumber = number.mutableArrayValue(forKey: "number")[indexPath.row] as? String
+            dest.showGeschmack = geschmackA.mutableArrayValue(forKey: "geschmackA")[indexPath.row] as? String
+            dest.showStaerke = staerkeA.mutableArrayValue(forKey: "staerkeA")[indexPath.row] as? String
+        }
+        
     }
 }

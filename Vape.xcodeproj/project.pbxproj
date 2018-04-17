@@ -14,6 +14,7 @@
 		758CBC1A205C2AB2007E4D08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 758CBC18205C2AB2007E4D08 /* LaunchScreen.storyboard */; };
 		758CBC25205C2AB3007E4D08 /* VapeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758CBC24205C2AB3007E4D08 /* VapeTests.swift */; };
 		758CBC30205C2AB3007E4D08 /* VapeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758CBC2F205C2AB3007E4D08 /* VapeUITests.swift */; };
+		75955F6F208650990073A02F /* ShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75955F6E208650990073A02F /* ShowViewController.swift */; };
 		75F888FF206414C5006CF4D6 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F888FE206414C5006CF4D6 /* CustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		758CBC2B205C2AB3007E4D08 /* VapeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VapeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		758CBC2F205C2AB3007E4D08 /* VapeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VapeUITests.swift; sourceTree = "<group>"; };
 		758CBC31205C2AB3007E4D08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75955F6E208650990073A02F /* ShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowViewController.swift; sourceTree = "<group>"; };
 		75F888FE206414C5006CF4D6 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,6 +104,7 @@
 				758CBC0F205C2AB2007E4D08 /* AppDelegate.swift */,
 				758CBC11205C2AB2007E4D08 /* ViewController.swift */,
 				758CBC13205C2AB2007E4D08 /* Main.storyboard */,
+				75955F6E208650990073A02F /* ShowViewController.swift */,
 				75F888FE206414C5006CF4D6 /* CustomTableViewCell.swift */,
 				758CBC16205C2AB2007E4D08 /* Assets.xcassets */,
 				758CBC18205C2AB2007E4D08 /* LaunchScreen.storyboard */,
@@ -265,6 +268,7 @@
 				75F888FF206414C5006CF4D6 /* CustomTableViewCell.swift in Sources */,
 				758CBC12205C2AB2007E4D08 /* ViewController.swift in Sources */,
 				758CBC10205C2AB2007E4D08 /* AppDelegate.swift in Sources */,
+				75955F6F208650990073A02F /* ShowViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

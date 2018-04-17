@@ -33,6 +33,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         number.array(forKey: "number")
         geschmackA.array(forKey: "geschmackA")
         staerkeA.array(forKey: "staerkeA")
@@ -119,6 +120,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             
             let alert = UIAlertController(title: "Wirklich Löschen?", message: "Willst du wirklich den eintrag löschen?", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Ja", style: .default, handler: {(alert: UIAlertAction!) in
+                
                 self.number.mutableArrayValue(forKey: "number").removeObject(at: indexPath.item)
                 self.geschmackA.mutableArrayValue(forKey: "geschmackA").removeObject(at: indexPath.item)
                 self.staerkeA.mutableArrayValue(forKey: "staerkeA").removeObject(at: indexPath.item)
@@ -133,18 +135,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         number.mutableArrayValue(forKey: "number").add(test1Field.text!)
         geschmackA.mutableArrayValue(forKey: "geschmackA").add(test2Field.text!)
         staerkeA.mutableArrayValue(forKey: "staerkeA").add(test3Field.text! + " mg")
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        table.deselectRow(at: indexPath, animated: true)
-        
-        // mit alert Fenster
-        let alert = UIAlertController(title: number.mutableArrayValue(forKey: "number").object(at: indexPath.item) as? String, message: "Test Msg", preferredStyle: .alert)
-        alert.message = "\n"+"Geschmack: "+(geschmackA.mutableArrayValue(forKey: "geschmackA").object(at: indexPath.item) as! String)+"\n"+"\n"+"Nikotinstärke: "+(staerkeA.mutableArrayValue(forKey: "staerkeA").object(at: indexPath.item) as! String)
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        self.present(alert, animated: true)
-        print(indexPath.item)
-        print(number.mutableArrayValue(forKey: "number").object(at: indexPath.item))
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
